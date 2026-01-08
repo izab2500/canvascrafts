@@ -166,7 +166,7 @@ async function calcTotalPrice() {
     if (arr.length === 0) return
 
     try {
-        const res = await fetch("../data/products.json")
+        const res = await fetch("/data/products.json")
         if (!res.ok) throw new Error("Network error or problems fetching paintings");
         const paintings = await res.json();
         let sum = 0;
@@ -192,7 +192,7 @@ async function initCreateProductsInCart() {
 
     let products = [];
     try {
-        const res = await fetch("../data/products.json");
+        const res = await fetch("/data/products.json");
         if (!res.ok) throw new Error("Failed to fetch products")
         products = await res.json();
     } catch (err) {
@@ -289,7 +289,7 @@ if (location.pathname.includes("painting.html")) {
     //get painting from json-file
     async function fetchPainting(id) {
         try {
-            const res = await fetch("../data/products.json")
+            const res = await fetch("/data/products.json")
 
             if (!res.ok) throw new Error("Failed to fetch paintings from json-file")
 
@@ -430,7 +430,7 @@ async function updateSummaryCheckout() {
     // fetch product data from json file
     let data;
     try {
-        const res = await fetch("../data/products.json");
+        const res = await fetch("/data/products.json");
         if (!res.ok) throw new Error("Failed to fetch products");
         data = await res.json();
         //invoke to build products summary
