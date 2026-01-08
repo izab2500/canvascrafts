@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learn about CanvasCrafts, a small business run by two passionate artists offering canvas paintings and custom artwork. Discover our story, mission, and how we can bring art into your home.">
+    <title>CanvasCrafts | About us</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/favicon.png">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <!--header + nav-->
+    <header>
+        <div class="nav-wrapper">
+            <div>
+                <div id="icon-smaller-screens">
+                    <span></span><span></span><span></span>
+                </div>
+                <h1>CanvasCrafts</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./paintings.html">paintings</a></li>
+                    <li><a class="active-link" href="./about.html">about us</a></li>
+                </ul>
+            </nav>
+
+            <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+            <!--cart value-->
+            <span id="cart-icon-value">0</span>
+        </div>
+        <div class="header-presentation-text">
+            <h2>about us</h2>
+        </div>
+    </header>
+    <!--Overlay-->
+    <div class="hidden" id="overlay"></div>
+
+    <!--empty cart-->
+    <div class="hidden" id="empty-cart">
+        <p>your cart is empty</p>
+        <span>😟</span>
+    </div>
+
+    <!--cart-->
+    <div class="hidden" id="cart">
+        <div>
+            <div>
+                <h2>cart</h2>
+                <div>(<span id="total-paintings"></span>)</div>
+            </div>
+            <p id="remove-all">remove all</p>
+        </div>
+        <div id="paintings-in-cart">
+        </div>
+        <div>
+            <p>total</p>
+            <div>
+                <span>$</span><span id="total-sum"></span>
+            </div>
+        </div>
+        <a href="./checkout.html">checkout</a>
+    </div>
+
+    <!--main-->
+    <main id="main-about">
+        <section class="about-grid">
+            <h2>how we started</h2>
+            <figure>
+                <picture>
+                    <source srcset="./images/collage-5-images-removebg.avif" type="image/avif">
+                    <source srcset="./images/collage-5-images-removebg.webp" type="image/webp">
+                    <img src="./images/collage-5-images-removebg.png"
+                        alt="Collage of the five key paintings that inspired the creation of CanvasCrafts." width="450" height="450">
+                </picture>
+            </figure>
+            <div class="about-p-div">
+                <p>CanvasCrafts began with a passion for art, inspired by five special paintings that hold a significant
+                    place in our journey. These pieces resonate deeply with us, capturing the essence of creativity and
+                    emotion.</p>
+                <p>As we shared these artworks with friends and family, we were overwhelmed by their interest and
+                    enthusiastic requests to make these paintings available to a wider audience. Recognizing the joy our
+                    art brought to others, we decided to start our own business.</p>
+                <p>Driven by a commitment to share our most requested pieces, we created CanvasCrafts to bring quality
+                    canvas art to homes in the US. Our mission is to deliver not just beautiful artwork, but also a
+                    piece of our story and your story.</p>
+            </div>
+        </section>
+
+        <section class="about-flex">
+            <h2>who are we</h2>
+            <div class="about-p-div">
+                <p>Our journey began in Paris, where we met as art students in our early
+                    twenties. The city was full of inspiration, and our shared love for art quickly turned into a deep
+                    friendship and partnership. We spent countless hours sketching by the Seine and exploring museums,
+                    dreaming about bringing our own creative visions to life.</p>
+                <p>As a couple, our passion for painting has only grown stronger over the years. We love to experiment
+                    with various styles, whether it’s abstract, landscapes, or modern pieces. Each artwork we create
+                    reflects our experiences, emotions, and the story we want to share.</p>
+                <p>At CanvasCrafts, we want to bring a piece of our art into your home. We hope our paintings inspire
+                    joy and connection in your life. To learn more about us and see our latest creations, feel free to
+                    visit our social media pages. We’re excited to share our journey with you!</p>
+            </div>
+        </section>
+
+        <section class="about-flex">
+            <h2>our concept</h2>
+            <div class="about-p-div">
+                <p>At CanvasCrafts, we believe that art is deeply personal and should resonate with the heart. That's
+                    why we don't just create our own pieces; we also offer the opportunity for custom artwork tailored
+                    just for you. Whether you have a specific vision in mind or want to capture a cherished memory,
+                    we’re here to help turn your ideas into beautiful canvas art.</p>
+                <p>Imagine transforming your favorite photograph or a special moment into a stunning piece that enhances
+                    your space. Our passion for creating goes hand-in-hand with our commitment to delivering artwork
+                    that speaks to you personally.</p>
+                <p>We invite you to reach out and share your ideas with us! Whether you prefer to call or send a
+                    email, we’d love to collaborate on your custom order and bring your artistic dreams to life. Let’s
+                    work together to create something uniquely yours!</p>
+            </div>
+        </section>
+
+        <section class="about-flex">
+            <h2>meet our web developer</h2>
+            <div class="about-p-div">
+                <p>Our webshop is brought to life by our friend, a web developer student at Mittuniversitetet in Sweden,
+                    who considers himself an
+                    intermediate
+                    in HTML, CSS, and JavaScript.</p>
+                <p>
+                    While those are the only programming languages he knows, his passion for learning keeps him
+                    motivated to explore more complex topics. He finds the logical and intricate parts of programming
+                    far more stimulating than working with design tools like Figma.
+                </p>
+                <p>
+                    Driven by a desire to improve his skills, he constantly seeks out new challenges and opportunities
+                    to grow. This commitment not only enhances the functionality of our site but also ensures a smooth
+                    and engaging experience for our customers. He’s not just building a platform; he’s creating a space
+                    where our art and vision can shine.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="home-card has-address">
+            <div>
+                <h2>custom orders</h2>
+                <p>Bring your vision to life with a personalized painting crafted just for you. Share your idea today
+                    and we will turn it into a masterpiece!</p>
+                <address>
+                    <a href="mailto:info@canvascrafts.com">info@canvascrafts.com</a>
+                    <a href="tel:0701122334">070-11 22 334</a>
+                </address>
+            </div>
+            <div class="circle">
+                <span></span>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <h2>canvasCrafts</h2>
+        <section>
+            <h3>contact</h3>
+            <address>
+                <p>street 11, city</p>
+                <a href="mailto:info@canvascrafts.com">info@canvascrafts.com</a>
+                <a href="tel:0701122334">070-11 22 334</a>
+            </address>
+        </section>
+
+        <p>CanvasCrafts is your go-to web store for stunning canvas paintings. We’re a small business run by two
+            passionate artists who are devoted to bringing your walls to life with color, emotion, and custom creations.
+        </p>
+        <p>Copyright 2026. All Rights Reserved.</p>
+        <div>
+            <svg role="img" fill="white" width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+            </svg>
+            <svg role="img" fill="white" width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Pinterest</title>
+                <path
+                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
+            </svg>
+            <svg role="img" fill="white" width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Facebook</title>
+                <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+            </svg>
+        </div>
+    </footer>
+
+</body>
+
+</html>

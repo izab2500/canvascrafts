@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "the woman in the red dress...",
+        "description": "A woman in a flowing red dress, standing at the edge of the sea. The shoulder straps of her gown slip off, symbolizing her surrender to the pull of the ocean. Her graceful stride towards the water evokes a sense of longing, freedom, and the eternal dance between nature and human desire.",
+        "alt": "A blonde woman in a red dress standing close to the sea",
+        "img": "./images/the-woman-in-the-red-dress-has-made-a-decision",
+        "price": 159,
+        "tumbnail": "./images/the-woman-in-the-red-dress-has-made-a-decision-tumbnail.jpg",
+        "abbreviation": "WR"
+    },
+    {
+        "id": 2,
+        "title": "teenage love",
+        "description": "Capturing the carefree spirit of youth, as a teenage girl and boy ride side by side on their bicycles, holding hands. With school bags slung over their shoulders, they share a moment of connection and innocence, embodying the simplicity of love and the excitement of shared journeys.",
+        "alt": "A teenage boy and girl holding hands as they ride their bicycles side by side.",
+        "img": "./images/teenage-love",
+        "price": 110,
+        "tumbnail": "./images/teenage-love-tumbnail.jpg",
+        "abbreviation": "TL"
+    },
+    {
+        "id": 3,
+        "title": "extravagant danger",
+        "description": "A woman in a red dress stands against a black wall, black hair tied up facing the black wall. Her exposed upper back and arms contrast with the fiery orange flames swirling around her waist. The painting captures a powerful interplay of vulnerability and strength, igniting the surroundings with intensity.",
+        "img": "./images/extravagant-danger",
+        "alt": "A woman with black hair wearing a red dress, facing away and showing her back.",
+        "price": 119,
+        "tumbnail": "./images/extravagant-danger-tumbnail.jpg",
+        "abbreviation": "ED"
+    },
+    {
+        "id": 4,
+        "title": "womans back",
+        "description": "A woman sits gracefully in a white dress, her upper back exposed as she subtly adjusts the fabric. With her right hand, she gently pulls the top of the dress from her right shoulder, creating an intimate, delicate moment. The scene exudes elegance and quiet confidence, captured in a soft, serene composition.",
+        "img": "./images/womans-back",
+        "alt": "A woman wearing a white dress, sitting sideways and showing her upper back.",
+        "price": 179,
+        "tumbnail": "./images/womans-back-tumbnail.jpg",
+        "abbreviation": "WB"
+    },
+    {
+        "id": 5,
+        "title": "couple with umbrella",
+        "description": "On a gray, rainy day, a mature couple shares a quiet moment under a white umbrella. The woman tenderly holds her partner beneath his right arm, their closeness radiating warmth amidst the chill. The scene captures a timeless bond, where love and care shelter them from the storm.",
+        "img": "./images/couple-with-umbrella",
+        "alt": "A couple walking together under an umbrella.",
+        "price": 99,
+        "tumbnail": "./images/couple-with-umbrella-tumbnail.jpg",
+        "abbreviation": "CU"
+    }
+]
