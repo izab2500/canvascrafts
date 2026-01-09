@@ -275,9 +275,8 @@ iconBarsParent.addEventListener("click", toggleIconsAndNav);
 
 
 /** display one painting, painting.html start  **/
-if (location.pathname.includes("painting")) {
+if (location.pathname.includes("painting.html")) {
     async function initDisplayOnePainting() {
-        console.log("painting.html site")
         // read the painting id from the query string to fetch the correct painting from JSON
         const params = new URLSearchParams(window.location.search);
         const id = Number(params.get("id"));
@@ -421,7 +420,7 @@ if (location.pathname.includes("painting")) {
 /** checkout.html start**/
 async function updateSummaryCheckout() {
     //run only on (checkout.html) --function is invoked when products are updated from cart--
-    if (!location.pathname.includes("checkout")) return;
+    if (!location.pathname.includes("checkout.html")) return;
 
     //get data from localstorage
     const arrLs = JSON.parse(localStorage.getItem("paintings") || "[]");
